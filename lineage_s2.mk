@@ -14,16 +14,19 @@
 # limitations under the License.
 #
 
+# Build type: official
+SAKURA_OFFICIAL := true
+
 # Inherit device configuration
 $(call inherit-product, device/leeco/s2/full_s2.mk)
 
 # Inherit some common AncientOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := s2
-PRODUCT_NAME := ancient_s2
+PRODUCT_NAME := lineage_s2
 PRODUCT_BRAND := LeEco
 PRODUCT_MANUFACTURER := LeMobile
 
