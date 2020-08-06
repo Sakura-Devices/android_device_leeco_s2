@@ -479,3 +479,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 # Model is set via init library
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.model
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
