@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    vendor/arrow/overlay/CarrierConfig
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -205,10 +205,6 @@ PRODUCT_COPY_FILES += \
 # Data Services
 PRODUCT_PACKAGES += \
     librmnetctl
-
-# Device mapper verity
-PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
 
 # Display
 PRODUCT_PACKAGES += \
