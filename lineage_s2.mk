@@ -21,6 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from s2 device
 $(call inherit-product, device/leeco/s2/device.mk)
 
+# Sakura build flags
+SAKURA_OFFICIAL := true
+SAKURA_MAINTAINER := CakesTwix
+SAKURA_OPLAUNCHER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
